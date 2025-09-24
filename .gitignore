@@ -1,0 +1,84 @@
+# 🍭 Yorozuya Management System - Git Ignore File
+# "Ignoring files is like ignoring responsibilities - sometimes necessary" - Gintoki
+
+# Compiled binaries
+yorozuya
+*.exe
+*.out
+*.app
+
+# Object files
+*.o
+*.obj
+obj/
+
+# Test executables
+tests/test_basic
+tests/test_edge
+tests/test_memory
+tests/test_implementation
+
+# Debug files
+*.dSYM/
+*.pdb
+*.ilk
+
+# IDE files
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
+*.swp
+*.swo
+*~
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Environment files
+.env
+.env.local
+
+# API keys (very important!)
+*api_key*
+*API_KEY*
+.gemini_key
+
+# Logs
+*.log
+debug.log
+valgrind.log
+
+# Temporary files
+*.tmp
+*.temp
+.temp/
+
+# Build artifacts
+build/
+dist/
+*.zip
+
+# Personal notes (students might add)
+notes.txt
+personal_notes.md
+scratch.cpp
+
+# Backup files
+*.bak
+*.backup
+
+# Core dumps
+core
+core.*
+
+# Memory debugging output
+valgrind-out.txt
+memcheck.out
+
+# Student solution attempts (for clean submissions)
+solution_attempt_*.cpp
+my_solution.cpp
+
+# Don't ignore the solution directory (for internal testing)
+!solution/

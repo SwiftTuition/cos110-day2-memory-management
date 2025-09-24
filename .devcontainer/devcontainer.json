@@ -1,0 +1,41 @@
+{
+    "name": "COS110 Day 2 - C++ Memory Management",
+    "image": "mcr.microsoft.com/devcontainers/cpp:ubuntu-22.04",
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:2": {
+            "installZsh": true,
+            "configureZshAsDefaultShell": true,
+            "installOhMyZsh": true
+        },
+        "ghcr.io/devcontainers/features/git:1": {
+            "ppa": true,
+            "version": "latest"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools",
+                "ms-vscode.cpptools-extension-pack",
+                "ms-vscode.cmake-tools",
+                "vadimcn.vscode-lldb",
+                "jeff-hykin.better-cpp-syntax"
+            ],
+            "settings": {
+                "C_Cpp.default.cppStandard": "c++98",
+                "C_Cpp.default.compilerPath": "/usr/bin/g++",
+                "terminal.integrated.defaultProfile.linux": "zsh"
+            }
+        }
+    },
+    "postCreateCommand": "bash .devcontainer/post-create.sh",
+    "remoteUser": "vscode",
+    "containerEnv": {
+        "DEBIAN_FRONTEND": "noninteractive"
+    },
+    "mounts": [
+        "source=${localWorkspaceFolder},target=/workspaces/${localWorkspaceFolderBasename},type=bind,consistency=cached"
+    ],
+    "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+    "shutdownAction": "stopContainer"
+}

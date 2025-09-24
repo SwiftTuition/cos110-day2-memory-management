@@ -24,7 +24,7 @@
 ### Step 1: Launch Your Development Environment
 **One-Click Setup with GitHub Codespaces:**
 
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](PLACEHOLDER_CODESPACES_LINK)
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/SwiftTuition/cos110-day2-memory-management)
 
 *Click the button above to launch a fully configured C++ development environment in your browser!*
 

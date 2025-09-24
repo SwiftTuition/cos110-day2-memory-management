@@ -25,16 +25,19 @@ By the end of this practical, you'll master:
 ## 🚀 Quick Start
 
 ### Option 1: GitHub Codespaces (Recommended)
-1. Click the big green "Code" button above
-2. Select "Codespaces" tab
-3. Click "Create codespace on main"
-4. Wait for the magic to happen ✨
-5. Start coding in your browser!
+
+[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/SwiftTuition/cos110-day2-memory-management)
+
+1. Click the "Open in GitHub Codespaces" button above
+2. Wait for the environment to load ✨
+3. Start coding in your browser!
+
+*Or manually: Go to the repository → Code → Codespaces → Create codespace*
 
 ### Option 2: Local Development
 ```bash
-git clone [repository-url]
-cd COS110_Day2_Project
+git clone https://github.com/SwiftTuition/cos110-day2-memory-management.git
+cd cos110-day2-memory-management
 make run
 ```
 

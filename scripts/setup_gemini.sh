@@ -65,7 +65,7 @@ def main():
         model = genai.GenerativeModel('gemini-pro')
 
         # Load the instructional prompt template
-        with open('/workspaces/COS110_Day2_Project/scripts/gemini_prompt_template.txt', 'r') as f:
+        with open('/workspaces/cos110-day2-memory-management/scripts/gemini_prompt_template.txt', 'r') as f:
             template = f.read()
 
         full_prompt = template.replace("{{USER_QUESTION}}", args.prompt)
@@ -106,7 +106,7 @@ if [ -z "$GEMINI_API_KEY" ]; then
 fi
 
 PROMPT="$1"
-TEMPLATE=$(cat /workspaces/COS110_Day2_Project/scripts/gemini_prompt_template.txt)
+TEMPLATE=$(cat /workspaces/cos110-day2-memory-management/scripts/gemini_prompt_template.txt)
 FULL_PROMPT="${TEMPLATE//\{\{USER_QUESTION\}\}/$PROMPT}"
 
 curl -s -X POST "https://generativelanguage.googleapis.com/v1/models/gemini-pro:generateContent?key=$GEMINI_API_KEY" \
